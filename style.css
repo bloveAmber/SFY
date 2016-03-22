@@ -1,0 +1,73 @@
+/**双飞翼布局，来源于淘宝。
+ * 通过在middle中加一个inner容器,解决圣杯布局的弊端。
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-color: #eee;
+    height: 600px;
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid #999;
+}
+
+.content .middle {
+    float: left;
+    width: 100%;
+    background-color: #eee;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.content .left {
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #999;
+    float: left;
+    margin-left: -100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.content .right {
+    width: 120px;
+    background-color: #fff;
+    border: 1px solid #999;
+    float: left;
+    margin-left: -122px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.middle .inner {
+	padding:0 40px; 
+    border: 1px solid #999;
+    margin-left: 220px;
+    margin-right: 140px;
+    background-color: #fff;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+article {
+    margin: 30px auto;
+    font-size: 16px;
+    line-height: 2em;
+    font-family: "微软雅黑", "Georgia", "Serif";
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+   /* border: 1px solid #999;*/
+}
+h5{
+	position: relative;
+	left: 110px;
+	top: -100px;
+}
